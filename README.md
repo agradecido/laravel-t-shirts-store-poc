@@ -55,7 +55,6 @@ To start analyzing the code:
 
 ## Install Telescope
 
-
 ```shell
 # Install Laravel Telescope
 composer require laravel/telescope --dev
@@ -82,3 +81,18 @@ public function register(): void
 }
 ```
 The Telescope dashboard may be accessed via the `/telescope` route.
+
+## Install Larevel Pint
+[Laravel Pint](https://github.com/laravel/pint) is an opinionated PHP code style fixer for minimalists. Pint is built on top of PHP-CS-Fixer and makes it simple to ensure that your code style stays clean and consistent.
+
+```shell
+# Install Laravel Pint
+composer require laravel/pint --dev
+
+# Run Pint
+./vendor/bin/pint
+
+# Run Pint on a directory
+./vendor/bin/pint app/Models
+./vendor/bin/pint app/Models/User.php
+```
