@@ -52,3 +52,17 @@ To start analyzing the code:
 ```shell
 ./vendor/bin/phpstan analyse
 ```
+
+## Install Telescope
+
+
+```shell
+# Install Laravel Telescope
+composer require laravel/telescope
+
+# Publish the Assets
+php artisan telescope:install
+ 
+# Create tables
+php artisan migrate
+```
