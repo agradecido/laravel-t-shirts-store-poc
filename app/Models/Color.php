@@ -14,8 +14,8 @@ class Color extends Model
         'name',
         'RGB',
     ];
-
     protected $keyType = 'string';
     protected $primaryKey = 'slug';
+    public $timestamps = false;
 }
 
