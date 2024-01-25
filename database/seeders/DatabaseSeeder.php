@@ -12,12 +12,9 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        $this->call(ColorSeeder::class);
-
-        // Si tuviésemos más seeders podríamos hacer esto:
-        // $this->call([
-        //  ColorSeeder::class,
-        //  // Aquí otros seeders,
-        // ]);
+        $this->call([
+            ColorSeeder::class,
+            TshirtSeeder::class,
+        ]);
     }
 }

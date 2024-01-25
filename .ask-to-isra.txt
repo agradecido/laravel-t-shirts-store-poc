@@ -1,2 +1,9 @@
-1. ¿Qué directorios añadimos a phpstan? app, tests, routes, database...
-2. Pint ¿On Save o también en un git hook?
+# sail artisan make:model Tshirt -cfp
+
+   INFO  Model [app/Models/Tshirt.php] created successfully.
+
+   INFO  Factory [database/factories/TshirtFactory.php] created successfully.
+
+   INFO  Controller [app/Http/Controllers/TshirtController.php] created successfully.
+
+No dice nada de Policy.
