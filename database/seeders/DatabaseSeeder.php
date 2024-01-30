@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Database\Factories\TshirtFactory;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -16,5 +16,6 @@ class DatabaseSeeder extends Seeder
             ColorSeeder::class,
             TshirtSeeder::class,
         ]);
+        (new TshirtFactory)->count(20)->create();
     }
 }
